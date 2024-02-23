@@ -33,30 +33,42 @@ namespace FormSubmitter.ViewModel
             this.filePicker = filePicker;
         }
 
+
+        //[RelayCommand]
+        //static async Task RequestPermission()
+        //{
+
+        //    //var status = PermissionStatus.Unknown;
+
+        //    //status = await Permissions.CheckStatusAsync<Permissions.StorageRead>();
+
+        //    //if(status == PermissionStatus.Granted)
+        //    //   return;
+            
+        //    //if(Permissions.ShouldShowRationale<Permissions.StorageRead>())
+        //    //{
+        //    //  await Shell.Current.DisplayAlert("Request the damn permission", "Because needed", "OK");
+                
+        //    //}
+
+        //    //status = await Permissions.RequestAsync<Permissions.StorageRead>();
+
+        //    //if (status != PermissionStatus.Granted)
+        //    //    await Shell.Current.DisplayAlert("Permission is a must", "Provide the permission", "OK");
+        //}
         [RelayCommand]
-        static async Task RequestPermission()
+        private static async Task<FileResult> PickAndShow(PickOptions options)
         {
             var status = PermissionStatus.Unknown;
-
             status = await Permissions.CheckStatusAsync<Permissions.StorageRead>();
 
-            if(status == PermissionStatus.Granted)
-               return;
-            
-            if(Permissions.ShouldShowRationale<Permissions.StorageRead>())
-            {
-                await Shell.Current.DisplayAlert("Request the damn permission", "Because needed", "OK");
-                
-            }
+            if (status == PermissionStatus.Granted)
+                return null;
 
             status = await Permissions.RequestAsync<Permissions.StorageRead>();
 
             if (status != PermissionStatus.Granted)
                 await Shell.Current.DisplayAlert("Permission is a must", "Provide the permission", "OK");
-        }
-        [RelayCommand]
-        private static async Task<FileResult> PickAndShow(PickOptions options)
-        {
             try
             {
                 var result = await FilePicker.Default.PickAsync(options);

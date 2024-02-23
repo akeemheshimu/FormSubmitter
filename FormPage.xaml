@@ -37,7 +37,16 @@
             <!--Once the File-Upload button is clicked it will begin the PickAndShowCommand depending on whether access to devices storage was granted-->
 
         </HorizontalStackLayout>
-        
+
+        <!--<HorizontalStackLayout Spacing="35">
+            <Button Text="Request Permission"
+                x:Name="requestPermission"
+                Command="{Binding RequestPermissionCommand}"
+        />
+            --><!--Once the button is clicked it will trigger the permission command--><!--
+
+        </HorizontalStackLayout>-->
+
         <Frame BorderColor="Black"
                Padding="20">
             <HorizontalStackLayout Spacing="10">

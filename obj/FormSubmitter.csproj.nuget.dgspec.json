@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AHeshimu\\source\\repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj": {}
+    "C:\\Repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AHeshimu\\source\\repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj": {
+    "C:\\Repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AHeshimu\\source\\repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj",
+        "projectUniqueName": "C:\\Repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj",
         "projectName": "FormSubmitter",
-        "projectPath": "C:\\Users\\AHeshimu\\source\\repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj",
+        "projectPath": "C:\\Repos\\FormSubmitter\\FormSubmitter\\FormSubmitter.csproj",
         "packagesPath": "C:\\Users\\AHeshimu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AHeshimu\\source\\repos\\FormSubmitter\\FormSubmitter\\obj\\",
+        "outputPath": "C:\\Repos\\FormSubmitter\\FormSubmitter\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

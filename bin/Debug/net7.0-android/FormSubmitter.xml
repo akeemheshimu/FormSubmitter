@@ -6,13 +6,6 @@
     <members>
         <member name="T:FormSubmitter.ViewModel.FormViewModel">
             <inheritdoc/>
-            <inheritdoc/>
-        </member>
-        <member name="F:FormSubmitter.ViewModel.FormViewModel.requestPermissionCommand">
-            <summary>The backing field for <see cref="P:FormSubmitter.ViewModel.FormViewModel.RequestPermissionCommand"/>.</summary>
-        </member>
-        <member name="P:FormSubmitter.ViewModel.FormViewModel.RequestPermissionCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FormSubmitter.ViewModel.FormViewModel.RequestPermission"/>.</summary>
         </member>
         <member name="F:FormSubmitter.ViewModel.FormViewModel.pickAndShowCommand">
             <summary>The backing field for <see cref="P:FormSubmitter.ViewModel.FormViewModel.PickAndShowCommand"/>.</summary>
