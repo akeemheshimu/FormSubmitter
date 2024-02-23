@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormSubmitter.MainPage"
+             xmlns:viewmodel="clr-namespace:FormSubmitter.ViewModel"
+             x:DataType="viewmodel:MainViewModel">
+
+    <VerticalStackLayout Margin="20"
+                         Spacing="6">
+        <Image Source="file_upload.png"
+               HeightRequest="45"
+               WidthRequest="35">
+        </Image>
+        <Label Text="Welcome To The Test Doc Submit App" 
+               Padding="10"/>
+        <Frame BorderColor="Black"
+              Padding="5">
+            <HorizontalStackLayout Spacing="15">
+                <Image Source="android_arrow.png"
+                             Aspect="AspectFill"
+                             HeightRequest="25"
+                             WidthRequest="15">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <Label Text="Welcome Click the Arrow To Begin"
+                      FontSize="18"/>
+            </HorizontalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+
+</ContentPage>
